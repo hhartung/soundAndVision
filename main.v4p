@@ -1,0 +1,201 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
+   <PATCH nodename="C:\SoundAndVision\main.v4p" scrollx="0" scrolly="4623" systemname="main" filename="C:\SoundAndVision\main.v4p">
+   <BOUNDS type="Window" left="6643" top="2016" width="12082" height="11298">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="34.1.0">
+   </PACK>
+   <NODE systemname="badMapper (DX9)" filename="SUBPATCHES\Modules\badMapper_v3\badMapper (DX9).v4p" nodename="badMapper (DX9)" componentmode="Hidden" id="98">
+   <BOUNDS type="Node" left="2541" top="10227" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Source" visible="1">
+   </PIN>
+   <PIN pinname="Content" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Destination Preview" visible="1">
+   </PIN>
+   <PIN pinname="Destination" visible="1">
+   </PIN>
+   <PIN pinname="Renderer Handles" visible="1">
+   </PIN>
+   <PIN pinname="Background Image" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Destination Preview Transparency" slicecount="1" values="0.24">
+   </PIN>
+   </NODE>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="105">
+   <BOUNDS type="Node" left="2794" top="10577" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2794" top="10577" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="195" top="0" width="8685" height="6915">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="View" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Window Handle" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Source">
+   </PIN>
+   </NODE>
+   <NODE systemname="Cons (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (Spreads)" componentmode="Hidden" id="104">
+   <BOUNDS type="Node" left="2779" top="11102" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="105" srcpinname="Window Handle" dstnodeid="104" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="103">
+   <BOUNDS type="Node" left="4651" top="10563" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4651" top="10563" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="8701" top="70" width="7756" height="6909">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Window Handle" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Destination Preview|">
+   </PIN>
+   <PIN pinname="View" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="102">
+   <BOUNDS type="Node" left="7638" top="10542" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7638" top="10542" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="19572" top="770" width="9492" height="6909">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Window Handle" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Destination">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="103" srcpinname="Window Handle" dstnodeid="104" dstpinname="Input 2" linkstyle="VHV">
+   <LINKPOINT x="4627" y="10941">
+   </LINKPOINT>
+   <LINKPOINT x="3088" y="10935">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="102" srcpinname="Window Handle" dstnodeid="104" dstpinname="Input 3" linkstyle="VHV">
+   <LINKPOINT x="7283" y="10999">
+   </LINKPOINT>
+   <LINKPOINT x="3629" y="11005">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="98" srcpinname="Source" dstnodeid="105" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="98" srcpinname="Destination Preview" dstnodeid="103" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="98" srcpinname="Destination" dstnodeid="102" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="104" srcpinname="Output" dstnodeid="98" dstpinname="Renderer Handles">
+   <LINKPOINT x="1722" y="12418">
+   </LINKPOINT>
+   <LINKPOINT x="1344" y="9947">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="124">
+   <BOUNDS type="Node" left="1743" top="8449" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1743" top="8449" width="2093" height="1568">
+   </BOUNDS>
+   <BOUNDS type="Window" left="12012" top="2471" width="5411" height="4417">
+   </BOUNDS>
+   <PIN pinname="Backbuffer Width" visible="1">
+   </PIN>
+   <PIN pinname="Backbuffer Height" visible="1">
+   </PIN>
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="EX9 Out" visible="1">
+   </PIN>
+   <PIN pinname="Background Color" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="125" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2394" top="7819" width="693" height="210">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2394" top="7819" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2048">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="px">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="125" srcpinname="Y Output Value" dstnodeid="124" dstpinname="Backbuffer Width">
+   </LINK>
+   <LINK srcnodeid="125" srcpinname="Y Output Value" dstnodeid="124" dstpinname="Backbuffer Height">
+   </LINK>
+   <NODE systemname="DX9Texture (EX9.Texture)" nodename="DX9Texture (EX9.Texture)" componentmode="Hidden" id="129">
+   <BOUNDS type="Node" left="3066" top="8890" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Source" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="124" srcpinname="EX9 Out" dstnodeid="129" dstpinname="Source">
+   </LINK>
+   <NODE systemname="HSL (Color Join)" nodename="HSL (Color Join)" componentmode="Hidden" id="133">
+   <BOUNDS type="Node" left="1743" top="7770" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Lightness" slicecount="1" values="-0.52">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="133" srcpinname="Output" dstnodeid="124" dstpinname="Background Color">
+   </LINK>
+   <NODE id="174" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
+   <PIN pinname="Y Output Value">
+   </PIN>
+   <BOUNDS type="Box" left="17943" top="8092" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="17943" top="8092" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Control Panel|">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="PipetTest" filename="PipetTest.v4p" nodename="PipetTest.v4p" componentmode="Hidden" id="212">
+   <BOUNDS type="Node" left="2576" top="5901" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="3710" top="1120" width="11151" height="10696">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="212" srcpinname="Texture Out" dstnodeid="98" dstpinname="Content">
+   </LINK>
+   </PATCH>

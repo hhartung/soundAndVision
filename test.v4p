@@ -1,0 +1,7 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
+   <PATCH nodename="C:\SoundAndVision\test.v4p" scrollx="1267" scrolly="0" systemname="test" filename="C:\SoundAndVision\test.v4p">
+   <BOUNDS type="Window" left="6643" top="2016" width="12082" height="11298">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="34.1.0">
+   </PACK>
+   </PATCH>
